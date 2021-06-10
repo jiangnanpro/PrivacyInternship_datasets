@@ -1,12 +1,14 @@
-#从pickle文件中读取数据
+#load the splited data from Adult.pickle
 ```python
-pickle_file = 'pickle.pickle'
+pickle_file = 'Adult.pickle'
 with open(pickle_file, 'rb') as f:
-  pickle_data = pickle.load(f)       # 反序列化，与pickle.dump相反
-  X_train = pickle_data['X_train']
-  X_test = pickle_data['X_test']
-  y_train = pickle_data['y_train']
-  y_test = pickle_data['y_test']
-  del pickle_data  # 释放内存
-print('Data and modules loaded.')
+  pickle_data = pickle.load(f)
+  x_private = pickle_data['x_private']
+  x_attack = pickle_data['x_attack']
+  x_reserved = pickle_data['x_reserved']
+  y_private = pickle_data['y_private']
+  y_attack = pickle_data['y_attack']
+  y_reserved = pickle_data['y_reserved']
+  del pickle_data
+print('Data loaded.')
 ```
