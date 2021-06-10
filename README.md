@@ -1,4 +1,4 @@
-## load the splited data from Adult.pickle
+## load the split data from Adult.pickle
 ```python
 pickle_file = 'Adult.pickle'
 with open(pickle_file, 'rb') as f:
