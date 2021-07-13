@@ -13,11 +13,12 @@ qmnist_targets = qall.targets.numpy()
 qmnist_len = qmnist_images.shape[0]
 
 # Set the size of each partition of the split
-private_partition_ratio = 1/5
-reserved_partition_ratio = 1/5
+private_partition_ratio = 1/3
+reserved_partition_ratio = 1/3
 
-private_partition_size = int(qmnist_len*private_partition_ratio)+10
-reserved_partition_size = int(qmnist_len*reserved_partition_ratio)+10
+private_partition_size = int(qmnist_len*private_partition_ratio)+1
+reserved_partition_size = int(qmnist_len*reserved_partition_ratio)+1
+
 
 # Randomly selecting the images for each partition
 rng = np.random.RandomState(2021)
