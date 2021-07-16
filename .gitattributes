@@ -1,2 +1,2 @@
 generated_images_labels.npz filter=lfs diff=lfs merge=lfs -text
-QMNIST_tabuler.pickle filter=lfs diff=lfs merge=lfs -text
+QMNIST_tabular.pickle filter=lfs diff=lfs merge=lfs -text
