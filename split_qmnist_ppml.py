@@ -34,5 +34,5 @@ split_dict['y_defender'] = qmnist_targets[defender_partition_indexes]
 split_dict['y_reserve'] = qmnist_targets[reserved_partition_indexes]
 
 # Store the dict using pickle
-with open('QMNIST3.pickle', 'wb') as f:
+with open('QMNIST_ppml.pickle', 'wb') as f:
     pickle.dump(split_dict, f)
